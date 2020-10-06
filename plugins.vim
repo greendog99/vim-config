@@ -11,15 +11,15 @@ endif
 call plug#begin('~/.vim/plugged')
 
 " Basics
-Plug 'mileszs/ack.vim'                " Search in project/directory
-Plug 'vim-airline/vim-airline'        " Fancy status bar and tab bar
+Plug 'mileszs/ack.vim'                  " Search in project/directory
+Plug 'vim-airline/vim-airline'          " Fancy status bar and tab bar
 Plug 'vim-airline/vim-airline-themes'
-Plug 'ctrlpvim/ctrlp.vim'             " Fuzzy file find
+Plug 'ctrlpvim/ctrlp.vim'               " Fuzzy file find
 Plug 'vim-scripts/ZoomWin'
-Plug 'preservim/nerdtree'             " File explorer tree
-Plug 'preservim/nerdcommenter'        " Code comment wrangling
-Plug 'jeetsukumaran/vim-buffergator'  " Navigation of open buffers
-Plug 'tpope/vim-surround'             " Change quotes, braces, etc.
+Plug 'preservim/nerdtree'               " File explorer tree
+Plug 'preservim/nerdcommenter'          " Code comment wrangling
+Plug 'jeetsukumaran/vim-buffergator'    " Navigation of open buffers
+Plug 'tpope/vim-surround'               " Change quotes, braces, etc.
 Plug 'bronson/vim-trailing-whitespace'  " Highlight in red. Can fix.
 Plug 'easymotion/vim-easymotion'
 "Plug 'ervandew/supertab'              " Insert mode tab completion
@@ -28,7 +28,6 @@ Plug 'easymotion/vim-easymotion'
 
 " Coding
 Plug 'vim-syntastic/syntastic'        " Syntax checking
-Plug 'sheerun/vim-polyglot'           " Language syntax
 Plug 'jelera/vim-javascript-syntax'   " Better JS syntax highlighting
 Plug 'hail2u/vim-css3-syntax'         " CSS3 syntax in addition to builtin css
 Plug 'ap/vim-css-color'               " Show color previews, e.g. #ff0000
@@ -36,6 +35,7 @@ Plug 'elzr/vim-json'                  " JSON formatting
 Plug 'tpope/vim-endwise'              " Auto-add 'end' for Ruby code
 Plug 'airblade/vim-gitgutter'         " Show git change markers
 Plug 'mattn/gist-vim'                 " Create gists from vim
+Plug 'sheerun/vim-polyglot'           " Language syntax
 "Plug 'davidhalter/jedi-vim'           " Python code autocompletion
 "Plug 'tpope/vim-rails'
 "Plug 'tpope/vim-rake'
@@ -50,6 +50,7 @@ Plug 'chriskempson/vim-tomorrow-theme'
 "Plug 'tomasr/molokai'
 
 Plug 'ryanoasis/vim-devicons'         " Use icons throughout vim. Load last.
+Plug 'tpope/vim-repeat'               " Enable repeating (.) of plugin mappings
 
 call plug#end()
 
@@ -137,10 +138,3 @@ nnoremap <leader>nf :NERDTreeFind<CR>
 " Use one tree buffer across all tabs
 "nnoremap <leader>nn :NERDTreeToggle<CR>:NERDTreeMirror<CR>
 
-"--------------------------
-" Polylglot
-"
-
-" Default highlight is better than polyglot
-let g:polyglot_disabled = ['python']
-let python_highlight_all = 1

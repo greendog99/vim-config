@@ -1,7 +1,8 @@
 set nocompatible   " don't try to be vi compatible
 set encoding=UTF-8
-let mapleader=" "  " Change leader from / to ,
+let mapleader=" "  " Change leader from /
 filetype plugin on
+set t_Co=256
 
 " Load plugins
 source ~/.vim/plugins.vim
@@ -84,8 +85,9 @@ nmap <leader>l mQviwu`Q
 nmap <leader>U mQgewvU`Q
 nmap <leader>L mQgewvu`Q
 
-" Underline the current line with '='
+" Underline the current line with '=' or '-'
 nmap <silent> <leader>ul :t.<CR>Vr=
+nmap <silent> <leader>uL :t.<CR>Vr-
 
 " set text wrapping toggles
 nmap <silent> <leader>tw :set invwrap<CR>:set wrap?<CR>
