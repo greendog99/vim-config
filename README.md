@@ -6,7 +6,7 @@ ln -s --force ~/.vim/vimrc ~/.vimrc
 ln -s --force ~/.vim/gvimrc ~/.gvimrc
 ~~~
 
-The first run of `vim` will install (vim-plug)[https://github.com/junegunn/vim-plug]
+The first run of `vim` will install [vim-plug](https://github.com/junegunn/vim-plug)
 and all the specified plugins.
 
 For vim-ack, `ag` from The Silver Searcher will be used if installed, otherwise
