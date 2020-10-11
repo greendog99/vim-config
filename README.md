@@ -1,7 +1,7 @@
 My vim setup for MacOS and Linux.
 
 ~~~
-git clone https://github.com/greendog99/vimrc.git ~/.vim
+git clone https://github.com/greendog99/vim-config.git ~/.vim
 ln -s --force ~/.vim/vimrc ~/.vimrc
 ln -s --force ~/.vim/gvimrc ~/.gvimrc
 ~~~
